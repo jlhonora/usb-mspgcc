@@ -1,0 +1,16 @@
+obj/
+bin/
+.DS*
+._*
+.*.sw*
+*.swp
+.project
+*.elf
+.App*
+*.ihex
+*.obj
+*/latex/*
+*.tex
+*.pdf
+*.md5
+build/
