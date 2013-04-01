@@ -21,7 +21,7 @@ And install it:
 
 A USB interface should appear in your PC. Using a serial port terminal software such as Coolterm or minicom you should be able to send and receive characters. A simple console is implemented, and can be entered sending 'shell\r\n'. More commands can be added in the console.c file.
 
-This code can be used as a starting point for other USB interfaces, such as HID or MSC, for example. To create your own descriptor string you should use TI's USB descriptor tool.
+This code can be used as a starting point for other USB interfaces, such as HID or MSC, for example. To create your own descriptor string you should use TI's USB descriptor tool. Note that the generated files cannot be replaced directly. You should look at the differences between both files (the generated ones and the ones provided in this repo) and make changes accordingly.
 
 ## Troubleshooting ##
 
