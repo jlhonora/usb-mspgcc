@@ -168,7 +168,7 @@ BYTE const abromStringDescriptor[] = {
 	24,		// Length of this string descriptor
 	3,		// bDescriptorType
 	'u',0x00,'s',0x00,'b',0x00,'_',0x00,'p',0x00,'r',0x00,
-	'n',0x00,'t',0x00,'f',0x00,'1',0x00,'2',0x00,
+	'i',0x00,'n',0x00,'t',0x00,'f',0x00,'1',0x00,
 
 	// String index3, Configuration String
 	22,		// Length of this string descriptor
