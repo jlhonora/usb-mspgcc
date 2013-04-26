@@ -6,7 +6,7 @@
 |    This is an automatically generated script by MSP430 USB Descriptor Tool   |
 |                                                                              |
 |    Descriptor Tool Version: 3.0.10                                            |
-|    Date: 2013/03/26 23:22:02                                                 |
+|    Date: 2013/04/26 15:57:36                                                 |
 |                                                                              |
 |                                Descriptor.c                                  |
 |-----------------------------------------------------------------------------*/
@@ -159,24 +159,31 @@ BYTE const abromStringDescriptor[] = {
 	0x09, 0x04,	// 0x0409 for English
 
 	// String index1, Manufacturer
-	18,		// Length of this string descriptor
+	36,		// Length of this string descriptor
 	3,		// bDescriptorType
-	'u',0x00,'s',0x00,'b',0x00,'p',0x00,'r',0x00,'i',0x00,
-	'n',0x00,'t',0x00,
+	'T',0x00,'e',0x00,'x',0x00,'a',0x00,'s',0x00,' ',0x00,
+	'I',0x00,'n',0x00,'s',0x00,'t',0x00,'r',0x00,'u',0x00,
+	'm',0x00,'e',0x00,'n',0x00,'t',0x00,'s',0x00,
 
 	// String index2, Product
-	24,		// Length of this string descriptor
+	38,		// Length of this string descriptor
 	3,		// bDescriptorType
-	'u',0x00,'s',0x00,'b',0x00,'_',0x00,'p',0x00,'r',0x00,
-	'i',0x00,'n',0x00,'t',0x00,'f',0x00,'1',0x00,
+	'M',0x00,'S',0x00,'P',0x00,'4',0x00,'3',0x00,'0',0x00,
+	'-',0x00,'U',0x00,'S',0x00,'B',0x00,' ',0x00,'E',0x00,
+	'x',0x00,'a',0x00,'m',0x00,'p',0x00,'l',0x00,'e',0x00,
 
-	// String index3, Configuration String
+	// String index3, Serial Number
+	4,		// Length of this string descriptor
+	3,		// bDescriptorType
+	'0',0x00,
+
+	// String index4, Configuration String
 	22,		// Length of this string descriptor
 	3,		// bDescriptorType
 	'M',0x00,'S',0x00,'P',0x00,'4',0x00,'3',0x00,'0',0x00,
 	' ',0x00,'U',0x00,'S',0x00,'B',0x00,
 
-	// String index4, Interface String
+	// String index5, Interface String
 	46,		// Length of this string descriptor
 	3,		// bDescriptorType
 	'V',0x00,'i',0x00,'r',0x00,'t',0x00,'u',0x00,'a',0x00,

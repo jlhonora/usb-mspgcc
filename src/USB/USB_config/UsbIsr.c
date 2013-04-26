@@ -6,7 +6,7 @@
 |    This is an automatically generated script by MSP430 USB Descriptor Tool   |
 |                                                                              |
 |    Descriptor Tool Version: 3.0.10                                            |
-|    Date: 2013/03/26 23:22:02                                                 |
+|    Date: 2013/04/26 15:57:36                                                 |
 |                                                                              |
 |                                UsbIsr.c                                      |
 |-----------------------------------------------------------------------------*/

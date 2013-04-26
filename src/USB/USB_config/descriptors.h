@@ -6,7 +6,7 @@
 |    This is an automatically generated script by MSP430 USB Descriptor Tool   |
 |                                                                              |
 |    Descriptor Tool Version: 3.0.10                                           |
-|    Date: 2013/03/26 23:22:02                                                 |
+|    Date: 2013/04/26 15:57:36                                                 |
 |                                                                              |
 |                                Descriptor.h                                  |
 |-----------------------------------------------------------------------------*/
@@ -49,7 +49,7 @@ extern "C"
 // If a serial number is to be reported, set this to the index within the string descriptor
 //of the dummy serial number string.  It will then be automatically handled by the API.
 // If no serial number is to be reported, set this to 0.
-#define USB_STR_INDEX_SERNUM  0             
+#define USB_STR_INDEX_SERNUM  3             
  #define PHDC_ENDPOINTS_NUMBER               2  // bulk in, bulk out
 
 
@@ -116,8 +116,8 @@ extern "C"
 #define SIZEOF_DEVICE_DESCRIPTOR  0x12
 //#define SIZEOF_REPORT_DESCRIPTOR  36
 //#define USBHID_REPORT_LENGTH      64  // length of whole HID report (including Report ID)
-#define CONFIG_STRING_INDEX       3
-#define INTF_STRING_INDEX         4
+#define CONFIG_STRING_INDEX       4
+#define INTF_STRING_INDEX         5
 #define USB_CONFIG_VALUE          0x01
 //***********************************************************************************************
 // OUTWARD DECLARATIONS
