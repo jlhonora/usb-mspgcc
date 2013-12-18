@@ -3,18 +3,13 @@ void init_ports(void);
 void init_clock(void);
 
 volatile uint8_t usb_printf_state = USB_DISABLED;
-__attribute__((critical)) int16_t usb_printf(const char * fmt, ...) {
+__attribute__((critical)) int16_t usb_printf(const char * fmt) {
     if(usb_printf_state == USB_DISABLED) return -1;
     if(usb_printf_state == USB_LOCKED) return -1;
     usb_printf_state = USB_LOCKED;
-    int16_t len;
-    va_list args;
-    va_start(args, fmt);
-    char msg[64];
-    len = vsnprintf(msg, 64, fmt, args);
-    cdcSendDataWaitTilDone((BYTE*) msg,
+    int16_t len = strlen(fmt);
+    cdcSendDataWaitTilDone((BYTE*) fmt,
                             len, CDC0_INTFNUM, 1);
-    va_end(args);
     usb_printf_state = USB_ENABLED;
     return len;
 }
@@ -71,6 +66,8 @@ void usb_receive_string(void) {
         DEBUG("Entering shell\r\n");
         console();
     } else {
-        DEBUG("USB (l=%d): %s\r\n", msg_len, msg);
+        DEBUG("USB: ");
+	DEBUG(msg);
+	DEBUG("\r\n");
     }
 }

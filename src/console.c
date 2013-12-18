@@ -45,7 +45,7 @@ void console_wait_for_newline(void) {
                                    MAX_STR_LENGTH - command_len,
                                    CDC0_INTFNUM);
             // Echo the command
-            DEBUG("%s", command);
+            DEBUG(command);
             bCDCDataReceived_event = FALSE;
             return;
         }
