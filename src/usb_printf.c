@@ -62,12 +62,13 @@ void usb_receive_string(void) {
         CDC0_INTFNUM);                                                         
     msg[msg_len] = 0;
     bCDCDataReceived_event = FALSE;
-    if(strncmp(msg, "shell", 5) == 0) {
-        DEBUG("Entering shell\r\n");
-        console();
-    } else {
+    //if(strncmp(msg, "shell", 5) == 0) {
+    //    DEBUG("Entering shell\r\n");
+	// The console is disabled in the 'less_ram' branch
+        //console();
+    //} else {
         DEBUG("USB: ");
 	DEBUG(msg);
 	DEBUG("\r\n");
-    }
+    //}
 }

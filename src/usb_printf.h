@@ -18,7 +18,6 @@
 #include "F5xx_F6xx_Core_Lib/HAL_PMM.h"
 
 #include "wdt.h"
-#include "console.h"
 
 __attribute__((critical)) int16_t usb_printf(const char * fmt);
 /** \fn DEBUG 
